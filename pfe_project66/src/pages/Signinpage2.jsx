@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import stylesigninp from "./Signinpage2.module.css"; 
+import stylesigninp from "./Signinpage2.module.css";
 import Fireobject from "../components/Fireobject";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; 
-import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons"; 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
-const Signinpage2 = () => {  
+const Signinpage2 = () => {
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
         password: "",
         confirmPassword: "",
+        birthday: "", // Add birthday
+        phoneNumber: "", // Add phone number
     });
 
     const [showPassword, setShowPassword] = useState(false);
@@ -37,36 +39,59 @@ const Signinpage2 = () => {
         <div className={stylesigninp.body}>
             <div className={stylesigninp.containerall}>
                 <div className={stylesigninp.container}>
-
                     <h2 className={stylesigninp.feutdfort}>Feut de foret</h2>
                     <div className={stylesigninp.firelogo}>
                         <Fireobject />
                     </div>
-                    
                     <div className={stylesigninp.bgform}>
                         <h1 className={stylesigninp.title1}>Create Account</h1>
                         <form onSubmit={handleSubmit} className={stylesigninp.form}>
 
+                            {/* Full Name */}
                             <input
                                 type="text"
                                 name="fullName"
                                 placeholder="Full Name"
                                 value={formData.fullName}
                                 onChange={handleChange}
-                                className={stylesigninp.input} 
+                                className={stylesigninp.input}
                                 required
                             />
 
+                            {/* Email */}
                             <input
                                 type="email"
                                 name="email"
                                 placeholder="Email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className={stylesigninp.input} 
+                                className={stylesigninp.input}
                                 required
                             />
 
+                            {/* Birthday */}
+                            <input
+                                type="date"
+                                name="birthday"
+                                placeholder="Birthday"
+                                value={formData.birthday}
+                                onChange={handleChange}
+                                className={stylesigninp.input}
+                                required
+                            />
+
+                            {/* Phone Number */}
+                            <input
+                                type="tel"
+                                name="phoneNumber"
+                                placeholder="Phone Number"
+                                value={formData.phoneNumber}
+                                onChange={handleChange}
+                                className={stylesigninp.input}
+                                required
+                            />
+
+                            {/* Password */}
                             <div className={stylesigninp.inputWrapper}>
                                 <input
                                     type={showPassword ? "text" : "password"}
@@ -74,7 +99,7 @@ const Signinpage2 = () => {
                                     placeholder="Password"
                                     value={formData.password}
                                     onChange={handleChange}
-                                    className={stylesigninp.input} 
+                                    className={stylesigninp.input}
                                     required
                                 />
                                 <button
@@ -86,6 +111,7 @@ const Signinpage2 = () => {
                                 </button>
                             </div>
 
+                            {/* Confirm Password */}
                             <div className={stylesigninp.inputWrapper}>
                                 <input
                                     type={showConfirmPassword ? "text" : "password"}
@@ -93,7 +119,7 @@ const Signinpage2 = () => {
                                     placeholder="Confirm Password"
                                     value={formData.confirmPassword}
                                     onChange={handleChange}
-                                    className={stylesigninp.input} 
+                                    className={stylesigninp.input}
                                     required
                                 />
                                 <button
@@ -105,21 +131,21 @@ const Signinpage2 = () => {
                                 </button>
                             </div>
 
+                            {/* Submit Button */}
                             <button type="submit" className={stylesigninp.button}>Sign Up</button>
 
+                            {/* Log In Link */}
                             <div className={stylesigninp.loglink}>
                                 <span className={stylesigninp.grayText}>Already have an account ? </span>
                                 <Link to="/" className={stylesigninp.link1}>
                                     <span className={stylesigninp.redText}> Log In</span>
                                 </Link>
                             </div>
-
                         </form>
                     </div>
                 </div>
             </div>
-            </div>
-        
+        </div>
     );
 };
 

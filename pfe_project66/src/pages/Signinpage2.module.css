@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sigmar&display=swap');
 
-
 /* Global Container */
 .containerall {
     display: flex;
@@ -13,8 +12,8 @@
 /* Main Container */
 .container {
     width: 1000px;
-    height: 500px;
-    margin-top: 40px;
+    height: 530px;
+    margin-top: 80px;
     background-color: #0275069c;
     background-image: url('../imgs/Foretimage.jpg');
     background-size: cover;
@@ -47,7 +46,7 @@
 
 .bgform {
     width: 600px;
-    height: 500px;
+    height: 530px;
     background: white;
     box-shadow: 0px 0px 10px 9px rgba(185, 185, 185, 0.25);
     border-radius: 26px;
@@ -70,7 +69,6 @@
     flex-direction: column;
     gap: 15px;
     width: 70%;
-    margin-top: 20px;
     margin-left: 40px;
     padding: 20px;
 }
@@ -98,7 +96,6 @@
     border: none;
     border-radius: 16px;
     cursor: pointer;
-    margin-top: 20px;
     margin-left: 60px;
     transition: background-color 0.3s ease;
 }
@@ -108,9 +105,10 @@
 }
 
 .firelogo {
-    position: fixed;
-    left: 373px;
-    top: 55%;
+    position: absolute; 
+    left: 200px; 
+    top: 55%; 
+    transform: translateY(-50%); 
     z-index: 5;
 }
 
@@ -118,9 +116,9 @@
     color: #ffffff;
     font-family: 'Libre Baskerville';
     font-size: 50px;
-    position: fixed;
-    left: 220px;
-    top: 15%;
+    position: absolute; 
+    left: 50px; 
+    top: 90px; 
     z-index: 5;
 }
 
@@ -128,7 +126,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     margin-left: 60px;
 }
 
