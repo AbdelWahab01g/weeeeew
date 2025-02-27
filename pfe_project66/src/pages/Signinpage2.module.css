@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sigmar&display=swap');
+
+
+/* Global Container */
+.containerall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 1000px;
+    height: 500px;
+    margin-top: 40px;
+    background-color: #0275069c;
+    background-image: url('../imgs/Foretimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px 9px rgba(126, 125, 125, 0.25);
+    border-radius: 26px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 26px;
+    z-index: 1;
+}
+
+.container > * {
+    position: relative;
+    z-index: 2;
+}
+
+.bgform {
+    width: 600px;
+    height: 500px;
+    background: white;
+    box-shadow: 0px 0px 10px 9px rgba(185, 185, 185, 0.25);
+    border-radius: 26px;
+    margin-right: 0;
+}
+
+.title1 {
+    color: black;
+    font-size: 34px;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 40px;
+    margin-left: 60px;
+    line-height: 35px;
+    letter-spacing: 2.72px;
+    word-wrap: break-word;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.input:focus {
+    border-bottom-color: #eb4504;
+}
+
+.button {
+    padding: 13px;
+    font-size: 18px;
+    background-color: #eb4504;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 60px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #702401f5;
+}
+
+.firelogo {
+    position: fixed;
+    left: 373px;
+    top: 55%;
+    z-index: 5;
+}
+
+.feutdfort {
+    color: #ffffff;
+    font-family: 'Libre Baskerville';
+    font-size: 50px;
+    position: fixed;
+    left: 220px;
+    top: 15%;
+    z-index: 5;
+}
+
+.loglink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.grayText {
+    color: #9c9c9c;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.28px;
+    word-wrap: break-word;
+}
+
+.redText {
+    color: #eb4504;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1.28px;
+    word-wrap: break-word;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.toggleButton {
+    position: absolute;
+    left: 480px;
+    top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2b2b2b;
+    font-size: 14px;
+    outline: none;
+}
+
+.toggleButton:hover {
+    color: #eb4504;
+}
+
+.link1 {
+    text-decoration: none;
+}
