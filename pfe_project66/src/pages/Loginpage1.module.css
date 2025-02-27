@@ -9,7 +9,7 @@
 .container {
     width: 1000px;
     height: 500px;
-    margin-top: 40px;
+    margin-top: 80px;
     background-color: #0275069c;
     background-image: url('../imgs/Foretimage.jpg');
     background-size: cover;
@@ -103,19 +103,20 @@
 }
 
 .firelogo {
-    position: fixed;
-    left: 373px;
-    top: 55%;
-    z-index: 5;
+    position: absolute;
+    left: 200px; /* Adjust as needed */
+    top: 55%; /* Adjust as needed */
+    transform: translateY(-50%);
+    z-index: 3;
 }
 
 .feutdfort {
     color: #ffffff;
     font-family: 'Libre Baskerville';
     font-size: 50px;
-    position: fixed;
-    left: 220px;
-    top: 90px;
+    position: absolute;
+    left: 50px; 
+    top: 90px; 
     z-index: 3;
 }
 
@@ -170,4 +171,3 @@
 .link1 {
     text-decoration: none;
 }
-

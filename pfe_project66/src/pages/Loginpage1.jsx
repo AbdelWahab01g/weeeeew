@@ -29,7 +29,6 @@ const Loginpage1 = () => {
     return (
         <div className={stylesigninp.body}>
             <div className={stylesigninp.containerall}>
-
                 <div className={stylesigninp.container}>
                     <h2 className={stylesigninp.feutdfort}>Feut de foret</h2>
                     <div className={stylesigninp.firelogo}>
